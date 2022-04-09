@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gypee</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header class="blue-header">
+        <h1>Cumulative Grade Point Average Calculation</h1>
+        <button id="submit_values">DONE</button>
+
+    </header>
+    <div class="level">
+        <h3>Please select the level to start from</h3>
+        <form id="levelForm">
+            <span><input type="radio" value="100" name="level" checked="checked">&nbsp; 100</span>
+            <span><input type="radio" value="200" name="level"> 200</span>
+            <span><input type="radio" value="300" name="level"> 300</span>
+            <span><input type="radio" value="400" name="level"> 400</span>
+            <span><input type="radio" value="500" name="level"> 500</span>
+        </form>
+    </div>
+    <div class="semester">
+        <h3>Semester</h3>
+        <form class="semester-form">
+            <span><input type="radio" value="first" name="semester" checked> First</span>
+            <span><input type="radio" value="second" name="semester"> Second</span>
+        </form>
+    </div>
+    <div id="result">
+        <h4>Option selected</h4>
+    </div>
+
+    <script src="/js/gypee.js"></script>
+</body>
+
+</html>

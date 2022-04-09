@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d8e3ff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 2.5rem;
+}
+
+.grid-post{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+.single-post{
+    margin: 2% 0 2% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-img{
+    width: 100%;
+    height: auto;
+}
+
+.post-content{
+    margin-left: 1%;
+}
+
+
+@media(max-width: 1112px){
+    .grid-post{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+@media(max-width: 564px){
+    .single-post{
+        display: block;
+}
+.post-img{
+  max-width: 400px;
+  margin: auto;
+}
+}
+
+
+
+.blue-header{
+    background-color: #0583d2;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#submit_values{
+    background-color: green;
+    padding: 2% 3%;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+}
+
+.level{
+    margin: 1% 0 1% 0;
+}
+
+#levelForm span, .semester-form span{
+    margin: 1% 2% 0 0;
+}
+
+#levelForm, .semester-form{
+    margin-top: .5%;
+}
+
+.blue-header{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type=radio], input[type=checkbox]{
+    height: 16px;
+    width: 16px;
+}
+
+form{
+    font-size: 20px;
+}
+
+#result{
+    display: none;
+    text-transform: capitalize;
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#select-grade{
+    width: 100%;
+}
+
+.grade{
+    display: none;
+    border-bottom: 1px solid #a9a9a9;
+}
+.grade:last-child{
+    border: none;
+}
+.grade input{
+    margin-left: 3%;
+}
