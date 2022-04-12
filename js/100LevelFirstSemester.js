@@ -1,6 +1,7 @@
 const courseCode = document.querySelectorAll("input[type=checkbox]")
 const grade = document.getElementsByClassName("grade")
 const courseGrade = document.querySelectorAll("input[type=radio]")
+const radioGrade = document.getElementsByClassName("grade")
 const gradeName = document.querySelectorAll("input[type = radio]")
 const submitValues = document.getElementById("submit_values")
 
@@ -8,6 +9,7 @@ const label = document.getElementsByTagName("label")
 
 let selctedCourse = ""
 
+// console.log(radioGrade.length)
 
 // const csc101 = 2
 // const chm101 = 4
@@ -76,7 +78,7 @@ for (let j = 0; j < gradeName.length; j++){
             gradePointCalulation(gradeName[j].value)
             coursePoint = gradePoint * courseUnit
             totalGradePoint = coursePoint
-        }    
+        } return totalGradePoint    
     })
 
 }
