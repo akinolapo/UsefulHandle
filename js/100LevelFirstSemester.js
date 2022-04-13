@@ -8,6 +8,7 @@ const submitValues = document.getElementById("submit_values")
 const label = document.getElementsByTagName("label")
 
 let selctedCourse = ""
+let myArray = []
 
 // console.log(radioGrade.length)
 
@@ -78,10 +79,13 @@ for (let j = 0; j < gradeName.length; j++){
             gradePointCalulation(gradeName[j].value)
             coursePoint = gradePoint * courseUnit
             totalGradePoint = coursePoint
-        } return totalGradePoint    
+            
+        } return totalGradePoint  
     })
 
 }
+
+
 
 
 // Check the grade selected and assign grade point
